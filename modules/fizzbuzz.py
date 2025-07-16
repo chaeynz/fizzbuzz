@@ -2,12 +2,15 @@ import os
 
 DEBUG =  os.environ.get("DEBUG")
 
-def fizz_buzz(config, start, end) -> list[str]:
+def fizz_buzz(fizzbuzzes, sample_range_start, sample_range_end) -> list[str]:
     result: list = []
 
-    for i in range(start, end + 1):
+    for i in range(
+        sample_range_start,
+        sample_range_end + 1
+    ):
         cache = ""
-        for item in config:
+        for item in fizzbuzzes:
             if i % item["value"] == 0:
                 cache += item["name"]
 
@@ -17,7 +20,10 @@ def fizz_buzz(config, start, end) -> list[str]:
                 print(cache)
 
         if DEBUG:
-            if not any([i % item["value"] == 0 for item in config]):
+            if not any([
+                i % item["value"] == 0
+                for item in fizzbuzzes
+            ]):
                 print(i)
 
     return result
