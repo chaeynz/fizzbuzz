@@ -3,11 +3,13 @@
     [
         {
             "name": "fizz",
-            "value": 3
+            "value": 3,
+            "rank": 1
         },
         {
             "name": "buzz",
-            "value": 5
+            "value": 5,
+            "rank": 2
         }
     ],
     "test_range": {

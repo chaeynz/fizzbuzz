@@ -11,6 +11,9 @@ if __name__ == '__main__':
         test_range = config["test_range"]
         reverse = config["reverse"]
 
+    # Sort the fizzbuzzes by their rank
+    fizzbuzzes = sorted(fizzbuzzes, key=lambda x: x["rank"])
+
     if reverse:
         fizzbuzzes.reverse()
 
