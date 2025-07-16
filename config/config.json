@@ -1,0 +1,17 @@
+{
+    "fizzbuzzes":
+    [
+        {
+            "name": "fizz",
+            "value": 3
+        },
+        {
+            "name": "buzz",
+            "value": 5
+        }
+    ],
+    "test_range": {
+        "start": 1,
+        "end": 100
+    }
+}
